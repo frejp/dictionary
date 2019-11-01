@@ -21,7 +21,6 @@ And makes the code more readable (mainly because you have to power to name our m
 ##Testing
 
 Using testing library. Testing library is based on a specific philosophy. See https://testing-library.com/
-Writing unit test AND integration test. Integration probably gives more value. This notion comes from the famous and discussed quote ‘Write tests. Not too many. Mostly integration’
 
 ##ACCESSIBILITY
 

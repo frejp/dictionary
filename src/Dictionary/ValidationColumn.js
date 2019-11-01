@@ -18,7 +18,7 @@ export const ValidationColumn = ({row, showInfoModal}) => {
     return (validationMessage === 'noError' ? <Td style={{textAlign: 'center', fontSize: '11px'}}>{`Ok`}</Td> :
         <Td style={{textAlign: 'center'}}>
             <span style={{color: row.validation.severityColor}}>{validationMessage}</span>
-            <Button onClick={showInfoModal}>
+            <Button aria-label="show-information"  onClick={showInfoModal}>
                 <FontAwesomeIcon size="1x" icon={faInfoCircle}/>
             </Button>
         </Td>)

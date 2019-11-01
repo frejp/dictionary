@@ -14,7 +14,7 @@ const Button = styled.button`
 
 export const DeleteRowColumn = ({onInputDeleteDictionary}) => {
     return (<Td>
-        <Button onClick={onInputDeleteDictionary}>
+        <Button aria-label="delete" onClick={onInputDeleteDictionary}>
             <FontAwesomeIcon size="1x" icon={faTrashAlt}/>
         </Button>
     </Td>)

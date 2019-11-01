@@ -50,7 +50,7 @@ export const GenericModal = (props) => {
         >
             <FlexWrapper>
                 <ModalHeading>{props.title}</ModalHeading>
-                <ModalCloseButton onClick={() => props.setIsModalOpen(false)}>
+                <ModalCloseButton aria-label="delete"  onClick={() => props.setIsModalOpen(false)}>
                     <FontAwesomeIcon size="1x" icon={faTimes}/>
                 </ModalCloseButton>
             </FlexWrapper>
