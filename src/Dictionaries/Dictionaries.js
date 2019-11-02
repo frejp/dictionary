@@ -48,7 +48,7 @@ export const Dictionaries = () => {
             </PrimaryButton>
             <SpacingYS />
             <NavList>
-                {state.dictionaries && state.dictionaries.map((dictionary) => <DictionaryRow dictionary={dictionary}></DictionaryRow>)}
+                {state.dictionaries && state.dictionaries.map((dictionary, index) => <DictionaryRow key={index} dictionary={dictionary}></DictionaryRow>)}
             </NavList>
             <GenericModal title={'Add New Dictionary'} setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen}>
                 <NewDictionaryForm setIsModalOpen={setIsModalOpen}/>

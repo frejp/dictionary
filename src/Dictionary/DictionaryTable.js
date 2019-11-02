@@ -10,13 +10,15 @@ export const DictionaryTable = ({dictionary}) => {
 
     return (
         <Table>
+            <tbody>
             {entries.length > 0 ?
                 <Tr>
                     <Th>Domain</Th>
                     <Th>Range</Th>
                     <Th>Validation</Th>
                 </Tr> : null}
-            {entries ? entries.map((row) => <DictionaryRow row={row}/>) : null}
+            {entries ? entries.map((row, index) => <DictionaryRow key={index} row={row}/>) : null}
+            </tbody>
         </Table>
     )
 }

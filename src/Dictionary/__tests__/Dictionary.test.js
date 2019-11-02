@@ -1,6 +1,3 @@
-// If dicationy is non processble sohw it for the user
-// If there is no dictionart selected show CTA text.
-
 import {render, fireEvent, getByTestId ,waitForElement} from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect"
 import Dictionary from '../Dictionary';
@@ -9,8 +6,6 @@ import { useReducer, useEffect } from "react";
 import reducer, {initialState} from '../../AppState/AppReducer';
 import * as React from "react";
 import Modal from 'react-modal';
-
-Modal.setAppElement(document.createElement('div'));
 
 jest.mock("../DictionaryTable", () => {
     const DictionaryTable = () => <div></div>;

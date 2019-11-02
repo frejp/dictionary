@@ -20,9 +20,9 @@ const NewEntryForm = ({setIsModalOpen}) => {
 
     return (
         <form onSubmit={addNewEntry} style={{padding: '20px'}}>
-            <Label for="domain">Domain</Label>
+            <Label htmlFor="domain">Domain</Label>
             <Input onChange={(event) => setDomain(event.target.value)} id="domain" name="domain"/>
-            <label style={{fontSize: '12px'}} for="range">Range</label>
+            <label style={{fontSize: '12px'}} htmlFor="range">Range</label>
             <Input onChange={(event) => setRange(event.target.value)} id="range" name="range"/>
             <SpacingYS />
             <PrimaryButton>

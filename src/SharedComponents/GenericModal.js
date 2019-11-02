@@ -47,6 +47,8 @@ export const GenericModal = (props) => {
             isOpen={props.isModalOpen}
             contentLabel="Example Modal"
             style={customStyles}
+            ariaHideApp={ false }
+
         >
             <FlexWrapper>
                 <ModalHeading>{props.title}</ModalHeading>
