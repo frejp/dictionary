@@ -8,7 +8,7 @@ import * as React from "react";
 import Modal from 'react-modal';
 Modal.setAppElement(document.createElement('div'));
 
-test("Click on select link will dispatch SET_DICTIONARY ie select a dictionary", async() => {
+test("Adds new dictionary", async() => {
     const dictionary = {"id": "4733e730-fb9a-11e9-8227-75b55a1d636e", "name": "ffsd", "entries": []};
     const dispatch = jest.fn();
     const setModalIsOpen = jest.fn();
