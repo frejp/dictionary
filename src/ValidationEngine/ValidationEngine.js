@@ -34,7 +34,7 @@ export const validateDictionary = (dictionary) => {
                 nonProcessable = true;
             }
             validation = {code: validation, severityColor: severityColorMap[validation]};
-            validatedDictionary = addValidationToDictionary(dictionary, index, validation);
+            validatedDictionary = addValidationToDictionary(validatedDictionary, index, validation);
         }
         else {
             validation = {code: 'noError', severityColor: severityColorMap['noError']};
@@ -43,6 +43,7 @@ export const validateDictionary = (dictionary) => {
     })
 
     return {validatedDictionary: validatedDictionary, nonProcessable: nonProcessable};
+
 }
 
 export const validateDuplicateAndFork = (newEntry, dictionary) => {
